@@ -13,7 +13,7 @@ B
 |
 C
 |
-D ( Lead Component )
+D ( Leaf Component )
 
 and we have a prop named **_itemCode_** which is generated at component **A**, and only to be used at component **D**.
 **`Traditional Way`** was to pass that itemCode as an prop to **B**, then **C**, and at last to **D**.
