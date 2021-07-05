@@ -13,9 +13,12 @@ import {
 import { v4 } from "uuid";
 
 //redux
+// "connect" use hoga unn 2 special redux function ko use karne ke leye
 import { connect } from "react-redux";
 import { addTodo } from "../action/todo";
 
+// ye jo addTodo recieve ho raha wo mapDispatchToProps se aa raha mapDispatchToProps
+// as an method jo wo method yaha se value lekr reducer ko bhejga
 const TodoForm = ({ addTodo }) => {
     const [title, setTitle] = useState("");
 
@@ -61,6 +64,10 @@ const TodoForm = ({ addTodo }) => {
 const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = (dispatch) => ({
+    // addTodo: me Line 33 se value aayegi, means ki ye method
+    // addTodo ko upar component me as a prop pass karega
+    // aur Line 33 me uss method ko value pass hogi jo yaha aayegi
+    // aur yaha se as an action bankr reducer ko pass ho jayega
     addTodo: (todo) => {
         dispatch(addTodo(todo));
     },

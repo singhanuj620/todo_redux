@@ -21,7 +21,11 @@ const Todo = ({ todos, markComplete }) => {
   );
 };
 
+
 const mapStateToProps = (state) => ({
+  // ye state.todos issleye hua kyuki reducer me jo initial state ban rahi 
+  // wo export as a "todos" ho raha
+  // agar confusion ho to state ko print kar lo
   todos: state.todos,
 });
 
