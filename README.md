@@ -35,7 +35,8 @@ This todo application is very small scale project, in large projects, this props
 6.  And in **_/src_** folder a file, make a file named `store.js`
 
 After this your project heirarchy will look like :
-![Folder](https://i.ibb.co/pf3rkjH/todo-js-todo-redux-Visual-Studio-Code-2021-07-05-15-02-14.png)
+
+![Folder](./folder.png)
 
 ## But what are these Action, Reducer, and Store ?
 
